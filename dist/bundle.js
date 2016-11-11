@@ -34240,7 +34240,7 @@
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, _) {
 	    'use strict';
 	    return function () {
-	        return React.createElement('div', { 'className': 'app' }, React.createElement('h1', {}, 'Hello2, ', this.props.currentUser), React.createElement('p', {}, 'Open console and dispatch "SET_CURRENT_USER" action with actionName'));
+	        return React.createElement('div', { 'className': 'app' }, React.createElement('h1', {}, 'Hello, ', this.props.currentUser), React.createElement('p', {}, 'Open console and dispatch "SET_CURRENT_USER" action with actionName'));
 	    };
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
