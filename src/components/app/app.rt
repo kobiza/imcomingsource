@@ -1,0 +1,4 @@
+<div class="app">
+    <h1>Hello2, {this.props.currentUser}</h1>
+    <p>Open console and dispatch "SET_CURRENT_USER" action with actionName</p>
+</div>

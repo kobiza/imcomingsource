@@ -1,0 +1,7 @@
+<rt-require dependency="react-redux" as="ReactRedux"/>
+<rt-require dependency="../app/app" as="App"/>
+
+
+<ReactRedux.Provider store={this.getStore()}>
+    <App/>
+</ReactRedux.Provider>
