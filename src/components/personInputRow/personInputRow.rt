@@ -1,0 +1,6 @@
+<div class="person-input-row">
+  <span class="name">{this.props.name}</span>
+  <input type="button" onClick="{this.imComing}" value="yes">
+  <input type="button" onClick="{this.imNotComing}" value="no">
+  <input type="button" onClick="{this.imNotSure}" value="?">
+</div>

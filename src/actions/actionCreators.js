@@ -8,3 +8,11 @@ export const setCurrentUser = (userName) => {
         userName
     };
 };
+
+export const setPersonStatus = (personId, status) => {
+    return {
+        type: actionTypes.SET_PERSON_STATUS,
+        personId,
+        status
+    };
+};

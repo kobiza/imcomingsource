@@ -1,4 +1,11 @@
+<rt-require dependency="../personInputRow/personInputRow" as="PersonInputRow"/>
+
+
 <div class="app">
-    <h1>Hello, {this.props.currentUser}</h1>
-    <p>Open console and dispatch "SET_CURRENT_USER" action with actionName</p>
+  <PersonInputRow key="{'person-' + person.id}" rt-repeat="person in this.props.nextEventPersons"
+    id="{person.id}"
+    name="{person.name}"
+    status="{person.status}"
+    updateStatus="{this.updateStatus}"
+  />
 </div>
