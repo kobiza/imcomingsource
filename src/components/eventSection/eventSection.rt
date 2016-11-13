@@ -1,0 +1,16 @@
+<rt-require dependency="../personInputRow/personInputRow" as="PersonInputRow"/>
+
+<div class="event-section">
+  <div class="section-head" onClick="{this.toggleSection}">
+    <span class="title">{this.props.title}</span>
+    <span class="counter">{'(' + this.props.persons.length + ')'}</span>
+  </div>
+  <div class="seperator"></div>
+  <div class="section-list" key="sectionList" rt-if="this.state.isOpen">
+    <PersonInputRow key="{'person-' + person.id}" rt-repeat="person in this.props.persons"
+      id="{person.id}"
+      name="{person.name}"
+      status="{person.status}"
+      updateStatus="{this.props.updateStatus}"/>
+  </div>
+</div>

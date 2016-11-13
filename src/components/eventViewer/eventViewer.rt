@@ -1,0 +1,23 @@
+<rt-require dependency="../eventSection/eventSection" as="EventSection"/>
+
+<div class="event-viewer">
+  <EventSection
+    title="Coming"
+    persons="{this.getComing()}"
+    updateStatus="{this.updateStatus}"/>
+
+  <EventSection
+    title="Not sure"
+    persons="{this.getNotSure()}"
+    updateStatus="{this.updateStatus}"/>
+
+  <EventSection
+    title="Not coming"
+    persons="{this.getNotComing()}"
+    updateStatus="{this.updateStatus}"/>
+
+  <EventSection
+    title="Not replied"
+    persons="{this.getNotReplied()}"
+    updateStatus="{this.updateStatus}"/>
+</div>

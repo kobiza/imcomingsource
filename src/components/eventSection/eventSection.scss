@@ -1,0 +1,19 @@
+.event-section {
+  margin-bottom: 20px;
+
+  .section-head {
+    user-select: none;
+    cursor: pointer;
+
+    .title {
+      width: 200px;
+      display: inline-block;
+    }
+
+    .counter {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

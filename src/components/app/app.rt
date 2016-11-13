@@ -1,11 +1,5 @@
-<rt-require dependency="../personInputRow/personInputRow" as="PersonInputRow"/>
-
+<rt-require dependency="../eventViewer/eventViewer" as="EventViewer"/>
 
 <div class="app">
-  <PersonInputRow key="{'person-' + person.id}" rt-repeat="person in this.props.nextEventPersons"
-    id="{person.id}"
-    name="{person.name}"
-    status="{person.status}"
-    updateStatus="{this.updateStatus}"
-  />
+  <EventViewer/>
 </div>
